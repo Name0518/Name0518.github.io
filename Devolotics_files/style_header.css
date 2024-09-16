@@ -1,0 +1,133 @@
+.header_container {
+    height: 60px;
+    width: calc(100% - 60px);
+    padding: 10px;
+    border-radius: 10px;
+
+    position: fixed;
+    z-index: 100;
+
+    display: flex;
+    align-items: center;
+
+    background-color: rgba(81, 71, 100, 0.2);
+    backdrop-filter: blur(100px);
+    font-size: 15px;
+    margin: 10px 20px;
+
+    transition: all 0.6s ease-in;
+
+    opacity: 0;
+}
+
+.header_wrapper {
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.header_logo {
+    width: 60px;
+    margin-right: 20px;
+}
+
+.header_left a {
+    display: flex;
+    align-items: center;
+}
+
+.header_right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.header_tags {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header_collapse {
+    display: none;
+}
+
+.header_collapse:hover {
+    cursor: pointer;
+}
+
+.header_tag {
+    position: relative;
+    margin-right: 2vw;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 0.05rem;
+}
+
+.header_tag::before,
+.header_tag::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 4px;
+    bottom: -10px;
+    background-image: linear-gradient(
+        90deg,
+        rgb(147, 105, 247) 0%,
+        rgb(232, 204, 255) 50%,
+        rgb(147, 105, 247) 100%
+    );
+    transition: width 0.3s ease-in-out;
+}
+
+.header_tag::before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header_tag::after {
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.header_tag:hover::before {
+    width: 100%;
+}
+
+.header_tag:hover::after {
+    width: 100%;
+}
+
+.header_tag:hover {
+    color: rgb(204, 177, 250);
+}
+
+/* Styles for smartphones (portrait) */
+@media (min-width: 320px) and (max-width: 480px) {
+    .header_collapse {
+        font-size: 45px;
+        display: block;
+    }
+
+    .header_tag {
+        display: none;
+    }
+
+    .header_container {
+        background-color: rgba(24, 23, 25, 0.95);
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+    .header_collapse {
+        font-size: 45px;
+        display: block;
+    }
+
+    .header_tag {
+        display: none;
+    }
+}

@@ -1,0 +1,119 @@
+.banner_container {
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.banner_overlay {
+    position: relative;
+    display: inline-block;
+}
+
+.banner_image {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.banner_logo_overlay {
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.banner_text_overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_text_overlay {
+    font-size: 2vw;
+}
+
+.banner_text_overlay p:first-child {
+    margin-right: 18vw;
+    font-size: 2.5vw;
+    width: 250px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    animation: slideFromLeft 1s forwards;
+}
+
+.banner_text_overlay p:last-child {
+    margin-left: 18vw;
+    font-size: 2vw;
+    width: 270px;
+    height: 200px;
+    text-align: end;
+    display: flex;
+    align-items: center;
+    animation: slideFromRight 1s forwards;
+}
+
+/* Styles for smartphones (portrait) */
+@media (min-width: 320px) and (max-width: 480px) {
+    .navigator_container {
+        display: none;
+    }
+
+    .banner_logo_overlay {
+        position: absolute;
+        width: 55vw;
+        height: 55vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+
+    .banner_text_overlay {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -35%);
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner_text_overlay p:first-child {
+        margin-bottom: 20vw;
+        font-size: 7vw;
+        width: 250px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        animation: slideFromLeft 1s forwards;
+    }
+
+    .banner_text_overlay p:last-child {
+        margin-top: 20vw;
+        font-size: 7vw;
+        width: 270px;
+        height: 200px;
+        text-align: end;
+        display: flex;
+        align-items: center;
+        animation: slideFromRight 1s forwards;
+    }
+
+    .banner_text_overlay h1 {
+        font-size: 15vw;
+        text-align: center;
+    }
+}
