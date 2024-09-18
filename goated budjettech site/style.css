@@ -1,7 +1,48 @@
+
+
+@font-face {
+    font-family: 'MiSans';
+    src: url('/MiSansLatin-Thin.woff') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
 color: gray;
+font-family: MiSans;
+}
+
+.title {
+    font-size: 30px;
+    text-align: center;
 }
 
 .navbar {
     text-align: center;
+    padding-bottom: 30px;
+    background-color: gray;
 }
+
+.navbarlist{
+display: inline-block;
+  padding: 20px;
+  color:white
+
+}
+
+li:hover {
+    color: #527dff;
+    cursor: grab;
+  }
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
