@@ -6,7 +6,7 @@
 }
 @font-face {
     font-family: 'MiSans';
-    src: url('/MiSansLatin-Thin.woff') format('opentype');
+    src: url('/MiSansLatin-Regular.woff') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -87,6 +87,12 @@ nav ul li a:hover::after{
   height:100vh;
   width:100%;
   background-color: white;
+  background-image:url('20231209_151216.jpg') ;
+  background-repeat: none;
+  background-size:cover;
+  background-position: center ;
+  
+  
 }
 
 .main{
@@ -98,7 +104,8 @@ nav ul li a:hover::after{
 
 h1{
   margin-bottom: 1rem;
-  color:rgb(121, 0, 0);
+  color:rgb(255, 255, 255);
+  font-size: 5rem;
 }
 
 .body2{
@@ -109,4 +116,13 @@ h1{
   width:100%;
   background-color:grey;
 }
+
+.main2{
+  position:absolute;
+  left:10%;
+  top:30%;
+  width:50%;
+}
+
+
 
