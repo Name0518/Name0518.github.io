@@ -1,128 +1,222 @@
-
-:root{
+:root {
   --main-color: grey;
-  --second-color:black;
-  --third-color:white;
+  --second-color: black;
+  --third-color: white;
 }
+
 @font-face {
-    font-family: 'MiSans';
-    src: url('fonts\._MiSansLatin-Regular.woff') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'MiSans';
+  src: url('fonts\._MiSansLatin-Regular.woff') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-family:MiSans;
+  font-family: MiSans;
 }
 
-header{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:7rem;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7rem;
   background-color: black;
-  z-index:1;
-  transition:0.5s;
+  z-index: 1;
+  transition: 0.5s;
 }
 
-header.scroll{
-  position:fixed;
-  top:-7rem;
-  left:0;
-  width:100%;
-  height:7rem;
+header.scroll {
+  position: fixed;
+  top: -7rem;
+  left: 0;
+  width: 100%;
+  height: 7rem;
   background-color: var(--main-color);
-  z-index:1;
-  transition:0.5s;
+  z-index: 1;
+  transition: 0.5s;
 }
 
-.logo{
-  position:absolute;
-  left:10%;
-  bottom:1rem;
-  font-size:1.5rem;
-  color:var(--third-color);
+.logo {
+  position: absolute;
+  left: 10%;
+  bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--third-color);
 }
 
-nav{
-  position:absolute;
-  left:30%;
-  bottom:1rem;
-  width:60%;
+nav {
+  position: absolute;
+  left: 30%;
+  bottom: 1rem;
+  width: 60%;
 }
 
 nav ul {
-  display:flex;
+  display: flex;
   list-style: none;
   justify-content: space-around;
 }
 
-nav ul li a{
+nav ul li a {
   text-decoration: none;
-  color:white;
-  font-size:1.5rem;
+  color: white;
+  font-size: 1.5rem;
 }
-nav ul li a::after{
-  content:'';
-  display:block;
-  width:0;
-  height:1px;
+
+nav ul li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
   background: white;
-  transition:width 0.3s;
+  transition: width 0.3s;
 }
 
-nav ul li a:hover::after{
-  width:100%;
-  transition:width .3s;
+nav ul li a:hover::after {
+  width: 100%;
+  transition: width .3s;
 }
 
-.body{
-  position:absolute;
-  top:0;
-  left:0;
-  height:100vh;
-  width:100%;
+.body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
   background-color: white;
-  background-image:url('images\20231209_151216.jpg') ;
+  background-image: url('images/budjet_tech_bg.jpg');
   background-repeat: none;
-  background-size:cover;
-  background-position: center ;
-  
-  
+  background-size: cover;
+  background-position: center;
+
+
 }
 
-.main{
-  position:absolute;
-  left:10%;
-  top:30%;
-  width:50%;
+.main {
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  width: 50%;
 }
 
-h1{
+h1 {
   margin-bottom: 1rem;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   font-size: 5rem;
 }
 
-.body2{
+.body2 {
   position: absolute;
-  top:100vh;
-  left:0;
-  height:100vh;
-  width:100%;
-  background-color:grey;
-}
-
-.main2{
-  position:absolute;
-  left:10%;
-  top:30%;
-  width:50%;
+  top: 100vh;
+  left: 0;
+  height: 40vh;
+  width: 100%;
+  background-color: #24262b;
 }
 
 
 
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+.body3 {
+  position: absolute;
+  top: 75vh;
+  left: 0;
+  width: 100%;
+}
+
+/* Code not stolen from robeartics*/
