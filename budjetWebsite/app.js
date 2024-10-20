@@ -1,13 +1,17 @@
-const header = document.querySelector('nav');
+const elements = document.querySelectorAll('nav');
 
 let prevScrollPos = window.scrollY;
 
 window.onscroll = function(){
     let currentScrollPos = window.scrollY;
     if(prevScrollPos > currentScrollPos){
-        header.classList.remove('scroll')
+        elements.forEach(header => {
+           header.classList.remove('scroll'); 
+        });
     }else{
-        header.classList.add('scroll');
+        elements.forEach(header => {
+            header.classList.add('scroll'); 
+        });
     }
     prevScrollPos = currentScrollPos;
 }
