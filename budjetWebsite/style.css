@@ -227,4 +227,12 @@ ul {
   }
 }
 
+.bodytemplate{
+  background-image: url("images/img2.jpg");
+  background-size: cover;
+  color: var(--third-color);
+
+  height: 100vh;
+}
+
 /* not stolen from bear bella trust */
