@@ -6,10 +6,7 @@
 
 @font-face {
   font-family: "MiSans";
-  src: url("fonts/MiSansLatin-Regular.otf") format("opentype"),
-    url("fonts/MiSansLatin-Regular.ttf") format("truetype"),
-    url("fonts/MiSansLatin-Regular.woff") format("woff"),
-    url("fonts/MiSansLatin-Regular.woff2") format("woff2");
+  src: url("fonts\._MiSansLatin-Regular.otf") format("opentype");
 }
 
 * {
@@ -80,14 +77,6 @@ nav ul li a:hover::after {
   transition: 0.5s;
 }
 
-.dropdown-nav {
-  position: fixed;
-}
-
-.dropdown-nav.scroll {
-  position: fixed;
-}
-
 /* section css */
 section {
   padding: 20px;
@@ -101,8 +90,12 @@ section {
   height: 100vh;
 }
 
+.homebody{
+  background-color: #C7C8C7;
+}
+
 .robotbg {
-  background-image: url("images/mecanum.png");
+  background-image: url("images/mechcatbotfake.png");
   background-size: cover;
   color: var(--third-color);
 
@@ -110,26 +103,26 @@ section {
 }
 
 .teambg {
-  background-image: url("images/img2.jpg");
-  background-size: cover;
-  color: var(--third-color);
-
-  height: 100vh;
+    background-image: url("images/img2.jpg");
+    background-size: cover;
+    color: var(--third-color);
+  
+    height: 100vh;
 }
 
 .sponsorbg {
-  background-image: url("images/wallet.jpg");
-  background-size: cover;
-  color: var(--third-color);
-
-  height: 100vh;
+    background-image: url("images/wallet.jpg");
+    background-size: cover;
+    color: var(--third-color);
+  
+    height: 100vh;
 }
-
+  
 .TextPosFix {
   position: relative;
   top: 13rem;
-  width: 50%;
-  left: 9%;
+  width:50%;
+  left:9%;
 }
 
 /* footer */
@@ -188,7 +181,7 @@ ul {
   font-weight: 300;
   color: #bbbbbb;
   display: block;
-  transition: all 0.3s ease;
+  transition: all .3s ease;
 }
 
 .footer-col ul li a:hover {
@@ -206,7 +199,7 @@ ul {
   line-height: 40px;
   border-radius: 50%;
   color: #ffffff;
-  transition: all 0.5s ease;
+  transition: all .5s ease;
 }
 
 .footer-col .social-links a:hover {
@@ -227,12 +220,8 @@ ul {
   }
 }
 
-.bodytemplate{
-  background-image: url("images/img2.jpg");
-  background-size: cover;
-  color: var(--third-color);
-
-  height: 100vh;
+.sponsordescription {
+  display:inline-block;
 }
 
 /* not stolen from bear bella trust */
