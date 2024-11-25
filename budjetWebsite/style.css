@@ -126,7 +126,7 @@ section {
   background-image: url("images/gamepiece.png");
   background-repeat: no-repeat;
   background-size:90%;
-  background-position: 140%;
+  background-position: 140% top;
 }
 
 .homebody3 h1{
