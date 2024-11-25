@@ -28,6 +28,10 @@ h1 {
   margin-bottom: 1rem;
   color: rgb(255, 255, 255);
   font-size: 5rem;
+  background-image: linear-gradient(90deg, rgb(254, 99, 244), rgb(77, 221, 249));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 nav ul {
