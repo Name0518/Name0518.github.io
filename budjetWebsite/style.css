@@ -22,7 +22,6 @@
 /* nav bar css */
 nav {
   display: flex;
-  opacity: 0.6;
 }
 
 h1 {
@@ -46,7 +45,6 @@ nav ul li a {
   text-decoration: none;
   color: var(--third-color);
   font-size: 1.5rem;
-  opacity: 1;
 }
 
 nav ul li a::after {
