@@ -374,12 +374,14 @@ ul {
 
 .wrapper .card{
     max-width: 300px;
-    background-color: white;
     padding: 40px;
     margin: 30px 15px;
     border-radius: 10px;
     box-shadow: 10px 10px 10px -1px rgba(10,99,169,0.16),
-    3px 3px 10px -1px rgba(255,255,255,0.7);
+    3px 3px 10px -1px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(20px);
+    background-color: rgba(255,255,255,0.6);
+
 }
 
 /* For Active Card */
@@ -490,21 +492,30 @@ ul {
 .pricetable {
   background-image: url("images/1323443.jpg");
   background-size: cover;
-  height: 100vh;
+  height: auto;
   background-position: center;
   background-color: #ebeef1;
   justify-content: center;
   align-items: center;
-  display:inline-block;
-;    align-items: center;
-    max-height: 100vh;
+  display:inline-block;    align-items: center;
     width: 100%;
 
   }
 
   .pricetable h1{
+    padding-top: 5%;
     text-align: center;
     background-image:linear-gradient(90deg,rgb(191, 250, 255), rgb(12, 81, 255));
   }
 
+  .bigcard{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px -1px rgba(10,99,169,0.16),
+    3px 3px 10px -1px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(20px);
+    background-color: rgba(255,255,255,0.4);
+  }
+
+  .sponsorlistsection
 /* not stolen from bear bella trust */
