@@ -69,7 +69,7 @@ nav ul li a:hover::after {
   height: 7rem;
   background-color: var(--second-color);
   padding: 0;
-  z-index: 1;
+  z-index: 2;
   transition: 0.5s;
 }
 
@@ -80,7 +80,7 @@ nav ul li a:hover::after {
   width: 100%;
   height: 7rem;
   background-color: var(--main-color);
-  z-index: 1;
+  z-index: 2;
   transition: 0.5s;
 }
 
@@ -136,9 +136,9 @@ section {
 .homebody4 {
   background-color: black;
   height: 90vh;
-  background-image: url("images/gamepiece.png");
+  background-image: url("images/IMG_0878.JPG");
   background-repeat: no-repeat;
-  background-size:90%;
+  background-size:cover;
   background-position: 140% top;
 }
 
