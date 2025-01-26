@@ -13,6 +13,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script
+      async
+      src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"
+    ></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@v0.163.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@v0.163.0/examples/jsm/"
+        }
+      }
+    </script>
   </head>
 
   <body>
@@ -33,64 +45,11 @@
         <h1>The Robot</h1>
         <p>Our second year masterpiece</p>
       </div>
+      <script type="module" src="main.js"></script>
+      <br />
     </section>
 
     <!-- copy and pasted from old vers  -->
-    <section id="footer-padding">
-      <footer class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="footer-col">
-              <img
-                src="images/menu_img.png"
-                style="width: 70%; margin-left: 10%"
-              />
-            </div>
-            <div class="footer-col">
-              <h4>Sponsor Us</h4>
-              <ul>
-                <li><a href="#">Sponsor Form</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-            <div class="footer-col">
-              <h4>Other Teams</h4>
-              <ul>
-                <li>
-                  <a href="https://linhong149.github.io/Robeartics-Website/"
-                    >Robeartics</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://replit.com/@CarlSun1/weebsite?v=1#src/App.jsx"
-                    >MechCat</a
-                  >
-                </li>
-                <li><a href="https://devolotics.github.io/">Devolotics</a></li>
-                <li>
-                  <a href="https://ireneding25.wixsite.com/bearbella"
-                    >BearBella</a
-                  >
-                </li>
-              </ul>
-            </div>
-
-            <div class="footer-col">
-              <h4>Follow us</h4>
-              <div class="social-links">
-                <a href="https://www.tiktok.com/@budjettech25049"
-                  ><i class="fab fa-tiktok"></i
-                ></a>
-                <a href="https://www.instagram.com/budjettech_25049"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </section>
 
     <script src="app.js"></script>
   </body>
